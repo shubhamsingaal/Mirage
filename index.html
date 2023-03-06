@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <script src="index.js"></script>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
+    <title>mirage@nitdgp</title>
+</head>
+<style>
+    model-viewer {
+        width: 400px;
+        height: 400px;
+        margin: 0 auto;
+    }
+</style>
+
+<body>
+
+        <div class="sign">
+            <span class="fast-flicker">m</span>ira<span class="flicker">ge</span>
+        </div>
+
+    <div class="container flex bg-white h-96 container mx-auto dark:bg-gray-900">
+        <div class="flex items-center text-center lg:text-left px-8 md:px-12 lg:w-1/2">
+            <div>
+                <h2 class="text-3xl font-semibold text-gray-800 md:text-4xl dark:text-white">
+                    Welcome to<span class="text-purple-700 dark:text-purple-600">
+                        3D Modeling</span>
+                </h2>
+
+                <p style="font-size: 1.2rem;     font-family: 'Roboto Mono', monospace;" class="mt-2 text-sm text-gray-500 md:text-base dark:text-gray-400">
+                    Three-dimensional (3D)
+                    visualization can be a valuable tool for students and researchers in
+                    various fields of study. With the help of advanced 3D visualization
+                    software and tools, it is possible to create detailed and accurate
+                    representations of complex structures and processes.
+                </p>
+            </div>
+        </div>
+        <model-viewer src="models/robot_pack/scene.gltf" camera-controls auto-rotate shadow-intensity="1"
+            touch-action="pan-y"></model-viewer>
+
+    </div>
+    </div>
+
+    <section class="inside-body-section">
+        <div class="container-fluid">
+            <div class="card department-card">
+                <div class="card-header">
+                    <h4>Departments</h4>
+                </div>
+                <div style="font-size: 1.2rem;     font-family: 'Roboto Mono', monospace; "class="card-body  ">
+                    <div class="department-menu text-gray-500">
+                        <ul class="row">
+                            <li class="col">
+                                <a href="https://nitdgp.ac.in/department/biotechnology">
+                                    <h2>BT</h2>
+                                    Biotechnology
+                                </a>
+                            </li>
+                            <li class="col">
+                                <a href="https://nitdgp.ac.in/department/civil-engineering">
+                                    <h2>CE</h2>
+                                    Civil Engineering
+                                </a>
+                            </li>
+                            <li class="col">
+                                <a href="https://nitdgp.ac.in/department/chemical-engineering">
+                                    <h2>CH</h2>
+                                    Chemical Engineering
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="row">
+                            <li class="col">
+                                <a href="https://nitdgp.ac.in/department/computer-science-engineering">
+                                    <h2>CS</h2>
+                                    Computer Science &amp; Engineering
+                                </a>
+                            </li>
+                            <li class="col">
+                                <a href="https://nitdgp.ac.in/department/chemistry">
+                                    <h2>CY</h2>
+                                    Chemistry
+                                </a>
+                            </li>
+                            <li class="col">
+                                <a href="https://nitdgp.ac.in/department/electronics-and-communication-engineering">
+                                    <h2>EC</h2>
+                                    Electronics and Communication Engineering
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="row">
+                            <li class="col">
+                                <a href="./deparments/ee.html">
+                                    <h2>EE</h2>
+                                    Electrical Engineering
+                                </a>
+                            </li>
+                            <li class="col">
+                                <a href="https://nitdgp.ac.in/department/earth-and-environmental-studies">
+                                    <h2>ES</h2>
+                                    Earth and Environmental Studies
+                                </a>
+                            </li>
+                            <li class="col">
+                                <a href="https://nitdgp.ac.in/department/humanities-and-social-sciences">
+                                    <h2>HS</h2>
+                                    Humanities and Social Sciences
+                                </a>
+                            </li>
+                            <li class="col">
+                                <a href="https://nitdgp.ac.in/department/mathematics">
+                                    <h2>MA</h2>
+                                    Mathematics
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="row">
+                            <li class="col">
+                                <a href="https://nitdgp.ac.in/department/mechanical-engineering">
+                                    <h2>ME</h2>
+                                    Mechanical Engineering
+                                </a>
+                            </li>
+                            <li class="col">
+                                <a href="./deparments/mme.html">
+                                    <h2>MM</h2>
+                                    Metallurgical &amp; Materials Engineering
+                                </a>
+                            </li>
+                            <li class="col">
+                                <a href="https://nitdgp.ac.in/department/management-studies">
+                                    <h2>MS</h2>
+                                    Management Studies
+                                </a>
+                            </li>
+                            <li class="col">
+                                <a href="https://nitdgp.ac.in/department/physics">
+                                    <h2>PH</h2>
+                                    Physics
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer of the page -->
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+</html>

@@ -1,0 +1,11 @@
+Model Information:
+* title:	Azurite
+* source:	https://sketchfab.com/3d-models/azurite-71ea7cf74b3c486bb19b764ff694fb3a
+* author:	RISD Nature Lab (https://sketchfab.com/RISDNaturelab)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Azurite" (https://sketchfab.com/3d-models/azurite-71ea7cf74b3c486bb19b764ff694fb3a) by RISD Nature Lab (https://sketchfab.com/RISDNaturelab) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

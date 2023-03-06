@@ -1,0 +1,11 @@
+Model Information:
+* title:	Sandstone Full 360 Mesh
+* source:	https://sketchfab.com/3d-models/sandstone-full-360-mesh-2e172b0757e8409fa1f32abe4fe41914
+* author:	Kless Gyzen (https://sketchfab.com/klessgyzen)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Sandstone Full 360 Mesh" (https://sketchfab.com/3d-models/sandstone-full-360-mesh-2e172b0757e8409fa1f32abe4fe41914) by Kless Gyzen (https://sketchfab.com/klessgyzen) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
