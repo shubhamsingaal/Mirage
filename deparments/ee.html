@@ -22,12 +22,12 @@
         @import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
 
         /* Global */
-    
+
         body {
-           
+
             padding: 4em;
             color: rgba(0, 0, 0, 0.75);
-           font-family: 'Roboto Mono', monospace;
+            font-family: 'Roboto Mono', monospace;
 
         }
 
@@ -73,24 +73,25 @@
         model-viewer {
             width: 00px;
             height: 300px;
-            
+
         }
 
         .container {
             display: flex;
             padding: 0px;
-            
 
-           
+
+
         }
-        .text{
+
+        .text {
             width: 30%;
         }
-        .mt-2{
-            font-size: 1.2rem;   
-              font-family: 'Roboto Mono', monospace;
+
+        .mt-2 {
+            font-size: 1.2rem;
+            font-family: 'Roboto Mono', monospace;
         }
-     
     </style>
 </head>
 
@@ -100,45 +101,50 @@
 
 
     <div class="container">
+        <div class="flex bg-white h-96 container mx-auto dark:bg-gray-900">
+            <div class="flex items-center text-center lg:text-left px-8 md:px-12 lg:w-1/2">
+                <div>
+                    <h2 class="text-3xl font-semibold text-gray-800 md:text-4xl dark:text-white">
+                        <span class="text-purple-700 dark:text-purple-600">
+                            Electric Motor</span>
+                    </h2>
+
+                    <p class="mt-2 text-sm text-gray-500 md:text-base dark:text-gray-400">
+                        Electric motors work by converting electrical energy to mechanical energy in order to create
+                        motion.
+                        Force is generated
+                        within the motor through the interaction between a magnetic field and winding alternating (AC)
+                        or
+                        direct (DC) current.
+                    </p>
+                </div>
+            </div>
+            <model-viewer class="card-img-top" src="../models/electric_motor_high_poly/electric_motor.gltf"
+                camera-controls auto-rotate shadow-intensity="1" touch-action="pan-y"></model-viewer>
+        </div>
+    </div>
+    </div>
+
     <div class="flex bg-white h-96 container mx-auto dark:bg-gray-900">
         <div class="flex items-center text-center lg:text-left px-8 md:px-12 lg:w-1/2">
             <div>
                 <h2 class="text-3xl font-semibold text-gray-800 md:text-4xl dark:text-white">
                     <span class="text-purple-700 dark:text-purple-600">
-                        Electric Motor</span>
+                        Generator</span>
                 </h2>
 
                 <p class="mt-2 text-sm text-gray-500 md:text-base dark:text-gray-400">
-                    Electric motors work by converting electrical energy to mechanical energy in order to create motion.
-                    Force is generated
-                    within the motor through the interaction between a magnetic field and winding alternating (AC) or
-                    direct (DC) current.
+                    What is a generator used for?
+                    Image result for Generator
+                    Generators are useful appliances that supply electrical power during a power outage and prevent
+                    discontinuity of daily
+                    activities or disruption of business operations. Generators are available in different electrical
+                    and physical
+                    configurations for use in different applications.
                 </p>
             </div>
         </div>
-        <model-viewer class="card-img-top" src="../models/electric_motor_high_poly/scene.gltf" camera-controls
-            auto-rotate shadow-intensity="1" touch-action="pan-y"></model-viewer>
-    </div>
-    </div>
-    </div>
-    
-    <div class="flex bg-white h-96 container mx-auto dark:bg-gray-900">
-        <div class="flex items-center text-center lg:text-left px-8 md:px-12 lg:w-1/2">
-            <div>
-                <h2 class="text-3xl font-semibold text-gray-800 md:text-4xl dark:text-white">
-                    <span class="text-purple-700 dark:text-purple-600">
-                        Electric Motor</span>
-                </h2>
-
-                <p class="mt-2 text-sm text-gray-500 md:text-base dark:text-gray-400">
-                    Electric motors work by converting electrical energy to mechanical energy in order to create motion.
-                    Force is generated
-                    within the motor through the interaction between a magnetic field and winding alternating (AC) or
-                    direct (DC) current.
-                </p>
-            </div>
-        </div>
-        <model-viewer class="card-img-top" src="../models/electric_motor_high_poly/scene.gltf" camera-controls
+        <model-viewer class="card-img-top" src="../models/Generator/pe-77-d_generator (1).glb" camera-controls
             auto-rotate shadow-intensity="1" touch-action="pan-y"></model-viewer>
     </div>
     </div>
