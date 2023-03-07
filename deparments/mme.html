@@ -102,15 +102,33 @@
 
 
         }
+        .mobile{
+            display: none;
+        }
 
         .card-body {
             height: auto;
         }
+
+        @media only screen and (max-width: 600px) {
+  .name{
+    display: none;
+  }
+  .mobile{
+    display: block;
+   
+    font-size: 1.5rem;
+      animation: typewriter 4s steps(44) 1s 1 normal both,;
+      text-align: center;
+    
+  }
+}
     </style>
 </head>
 
 <body>
     <p class="line-1 anim-typewriter name">Metallurgical & Materials Engineering</p>
+    <p class=" name mobile">Metallurgical <br>& Materials<br>Engineering</p>
     <hr>
 
     <div class="container1">

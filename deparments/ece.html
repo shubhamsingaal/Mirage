@@ -36,6 +36,7 @@
 
         }
 
+      
         .line-1 {
 
             position: relative;
@@ -106,17 +107,37 @@
         .card-body {
             height: auto;
         }
-        li{
+
+        li {
             text-align: left;
             line-height: 1.5rem;
+        }
+
+        .mobile {
+            display: none;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .name {
+                display: none;
+            }
+
+            .mobile {
+                display: block;
+
+                font-size: 1.5rem;
+                animation: typewriter 4s steps(44) 1s 1 normal both, ;
+                text-align: center;
+
+            }
         }
     </style>
 </head>
 
 <body>
-    <p class="line-1 anim-typewriter name">Electronics and Communication Engineering</p>
+    <p class="line-1 anim-typewriter name">Electronics & Communication Engineering</p>
+    <p class=" name mobile">Electronics & <br>Communication<br>Engineering</p>
     <hr>
-
     <div class="container1">
         <div class="card" style="width: 20rem;">
             <model-viewer class="card-img-top" src="../models/ece/resistor/scene.gltf" camera-controls auto-rotate
