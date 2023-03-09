@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>mirage@nitdgp-mm</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap');
+        @import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+        .name {
+            font-family: 'Roboto Mono', monospace;
+            font-size: 2rem;
+        }
+
+        .heading {
+            font-family: 'Roboto Mono', monospace;
+            font-size: 1.5rem;
+            color: rgb(153, 0, 255);
+
+
+        }
+
+        html {
+
+            font-family: 'Roboto Mono', monospace;
+            src: url("https://acupoftee.github.io/fonts/Clip.ttf");
+
+        }
+
+        body {
+
+
+            padding: 0.1em;
+            color: rgba(0, 0, 0, 0.75);
+            font-family: 'Anonymous Pro', monospace;
+
+        }
+
+        .line-1 {
+
+            position: relative;
+            top: -4%;
+            width: 24em;
+            margin: 0 auto;
+            border-right: 2px solid rgba(255, 255, 255, .75);
+            font-size: 180%;
+            text-align: center;
+            white-space: nowrap;
+            overflow: hidden;
+            transform: translateY(-50%);
+            margin-top: 47px;
+        }
+
+        /* Animation */
+        .anim-typewriter {
+            animation: typewriter 4s steps(44) 1s 1 normal both,
+                blinkTextCursor 500ms steps(44) infinite normal;
+        }
+
+        @keyframes typewriter {
+            from {
+                width: 0;
+            }
+
+            to {
+                width: 24em;
+            }
+        }
+
+        @keyframes blinkTextCursor {
+            from {
+                border-right-color: rgba(255, 255, 255, .75);
+            }
+
+            to {
+                border-right-color: transparent;
+            }
+        }
+
+
+
+
+
+        .mobile {
+            display: none;
+        }
+
+        .card-body {
+            height: auto;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .name {
+                display: none;
+            }
+
+            .mobile {
+                display: block;
+
+                font-size: 1.5rem;
+                animation: typewriter 4s steps(44) 1s 1 normal both, ;
+                text-align: center;
+
+            }
+        }
+
+        .h2 {
+            font-size: 1.5rem;
+            padding: 0px;
+
+        }
+
+
+        .color {
+            color: rgb(72, 72, 160);
+        }
+
+        .h3 {
+            font-size: 1.2rem;
+            font-weight: bolder;
+            text-align: center;
+
+
+
+        }
+
+        a {
+            text-decoration: none;
+            color: rgb(240, 144, 19);
+
+        }
+    </style>
+</head>
+
+<body>
+    <p class="line-1 anim-typewriter name color">Metallurgical & Materials Engineering</p>
+    <p class=" name mobile color">Metallurgical <br>& Materials<br>Engineering</p>
+    <hr>
+
+
+    <div class="accordion" id="accordionPanelsStayOpenExample">
+        <div style="text-align: center;" class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                <button class="accordion-button heading" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                    aria-controls="panelsStayOpen-collapseOne">
+                    Third Semester
+                </button>
+            </h2>
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                aria-labelledby="panelsStayOpen-headingOne">
+                <div class="accordion-body">
+                    <ul class="list-group list-group-flush h3">
+                        <li class="list-group-item"><a href="../mme_subjects/geology.html">Economic Geology</a></li>
+                        <li class="list-group-item"><a href="../mme_subjects/mmc301.html">Metallurgical Thermodynamics
+                                and Kinetics</a></li>
+                        <li class="list-group-item"><a href="#">Introduction to Metallurgy and Matrials</a></li>
+                        <li class="list-group-item"><a href="#">Nonferrous Process Metallurgy</a></li>
+                        <li class="list-group-item"><a href="#">Mathematics-III</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                <button class="accordion-button collapsed heading" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseTwo">
+                    Forth Semester
+                </button>
+            </h2>
+            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-headingTwo">
+                <div class="accordion-body">
+                    <ul class="list-group list-group-flush h3">
+                        <li class="list-group-item"><a href="#">Transport Phenomena in Metallurgical processes</a></li>
+                        <li class="list-group-item"><a href="#">Phase Transformation and Phase Equilibria</a></li>
+                        <li class="list-group-item"><a href="#">Materials Characterization</a></li>
+                        <li class="list-group-item"><a href="#">Data Structures and Algorithm</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                <button class="accordion-button collapsed heading" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseThree">
+                    Fifth Semester
+                </button>
+            </h2>
+            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-headingThree">
+                <div class="accordion-body">
+                    <ul class="list-group list-group-flush h3">
+                        <li class="list-group-item"><a href="#">Transport Phenomena in Metallurgical processes</a></li>
+                        <li class="list-group-item"><a href="#">Phase Transformation and Phase Equilibria</a></li>
+                        <li class="list-group-item"><a href="#">Materials Characterization</a></li>
+                        <li class="list-group-item"><a href="#">Data Structures and Algorithm</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                <button class="accordion-button collapsed heading" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseFour">
+                    Sixth Semester
+                </button>
+            </h2>
+            <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-headingFour">
+                <div class="accordion-body">
+                    <ul class="list-group list-group-flush h3">
+                        <li class="list-group-item"><a href="#">Transport Phenomena in Metallurgical processes</a></li>
+                        <li class="list-group-item"><a href="#">Phase Transformation and Phase Equilibria</a></li>
+                        <li class="list-group-item"><a href="#">Materials Characterization</a></li>
+                        <li class="list-group-item"><a href="#">Data Structures and Algorithm</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingFive">
+                <button class="accordion-button collapsed heading" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseFive">
+                    Seventh Semester
+                </button>
+            </h2>
+            <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-headingFive">
+                <div class="accordion-body">
+                    <ul class="list-group list-group-flush h3">
+                        <li class="list-group-item"><a href="#">Transport Phenomena in Metallurgical processes</a></li>
+                        <li class="list-group-item"><a href="#">Phase Transformation and Phase Equilibria</a></li>
+                        <li class="list-group-item"><a href="#">Materials Characterization</a></li>
+                        <li class="list-group-item"><a href="#">Data Structures and Algorithm</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingSix">
+                <button class="accordion-button collapsed heading" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseSix">
+                    Eighth Semester
+                </button>
+            </h2>
+            <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-headingSix">
+                <div class="accordion-body">
+                    <ul class="list-group list-group-flush h3">
+                        <li class="list-group-item"><a href="#">Transport Phenomena in Metallurgical processes</a></li>
+                        <li class="list-group-item"><a href="#">Phase Transformation and Phase Equilibria</a></li>
+                        <li class="list-group-item"><a href="#">Materials Characterization</a></li>
+                        <li class="list-group-item"><a href="#">Data Structures and Algorithm</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>

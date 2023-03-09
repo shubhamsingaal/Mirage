@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mirage@nitdgp-Geology</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap');
+        @import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+        .name {
+            font-family: 'Roboto Mono', monospace;
+            font-size: 2rem;
+
+
+
+        }
+
+        html {
+
+            font-family: 'Roboto Mono', monospace;
+            src: url("https://acupoftee.github.io/fonts/Clip.ttf");
+        }
+
+        body {
+
+            padding: 0.1em;
+            color: rgba(0, 0, 0, 0.75);
+            font-family: 'Anonymous Pro', monospace;
+
+        }
+
+        .line-1 {
+
+            position: relative;
+            top: -4%;
+            width: 24em;
+            margin: 0 auto;
+            border-right: 2px solid rgba(255, 255, 255, .75);
+            font-size: 180%;
+            text-align: center;
+            white-space: nowrap;
+            overflow: hidden;
+            transform: translateY(-50%);
+            margin-top: 47px;
+        }
+
+        /* Animation */
+        .anim-typewriter {
+            animation: typewriter 4s steps(44) 1s 1 normal both,
+                blinkTextCursor 500ms steps(44) infinite normal;
+        }
+
+        @keyframes typewriter {
+            from {
+                width: 0;
+            }
+
+            to {
+                width: 24em;
+            }
+        }
+
+        @keyframes blinkTextCursor {
+            from {
+                border-right-color: rgba(255, 255, 255, .75);
+            }
+
+            to {
+                border-right-color: transparent;
+            }
+        }
+
+        model-viewer {
+            width: 250px;
+            height: 250px;
+
+        }
+
+        .container1 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+
+
+        }
+
+        .card {
+            /* height: 500px; */
+            margin: auto;
+            font-size: 1.2rem;
+            font-family: 'Roboto Mono', monospace;
+            text-align: center;
+            margin: 5px;
+
+
+
+        }
+
+        .mobile {
+            display: none;
+        }
+
+        .card-body {
+            height: auto;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .name {
+                display: none;
+            }
+
+            .mobile {
+                display: block;
+
+                font-size: 1.5rem;
+                animation: typewriter 4s steps(44) 1s 1 normal both, ;
+                text-align: center;
+
+            }
+        }
+
+          .h2 {
+            font-size: 1.5rem;
+            padding: 0px;
+
+        }
+
+
+        .color {
+            color: rgb(72, 72, 160);
+        }
+    </style>
+</head>
+
+<body>
+    <p class="line-1 anim-typewriter name color">Metallurgical & Materials Engineering</p>
+    <p class=" name mobile color">Metallurgical <br>& Materials<br>Engineering</p>
+    <hr>
+
+        <p class="line-1 anim-typewriter name h2">Economic Geology</p>
+        <p class=" name mobile h2">Economic<br>Geology</p>
+        <hr>
+
+    <div class="container1">
+        <div class="card" style="width: 20rem;">
+            <model-viewer class="card-img-top" src="../models/mme/rock_scan_-_11/granite.gltf" camera-controls auto-rotate
+                shadow-intensity="1" touch-action="pan-y"></model-viewer>
+            <div class="card-body">
+                <h4 style="text-align: center;">Granite</h4>
+                <p style="line-height: 1.2rem;" class="card-text">Granite is a light-colored plutonic rock found
+                    throughout the continental crust, most commonly in mountainous areas. It
+                    consists of coarse grains of quartz (10-50%), potassium feldspar, and sodium feldspar</p>
+            </div>
+        </div>
+        <div class="card" style="width: 20rem;">
+            <model-viewer class="card-img-top" src="../models/mme/feldspar/feldspar.gltf" camera-controls auto-rotate
+                shadow-intensity="1" touch-action="pan-y"></model-viewer>
+            <div class="card-body">
+                <h4 style="text-align: center;">Feldspar</h4>
+                <p style="line-height: 1.2rem;" class="card-text">Feldspar is the name applied to a group of minerals
+                    that is the second most common of all the minerals. All feldspars
+                    are composed of aluminum, silicon, and oxygen combined with varying amounts of one or more metals,
+                    particularly
+                    potassium, sodium, and calcium.</p>
+            </div>
+        </div>
+        <div class="card" style="width: 20rem;">
+            <model-viewer class="card-img-top" src="../models/mme/magnetite.glb" camera-controls auto-rotate
+                shadow-intensity="1" touch-action="pan-y"></model-viewer>
+            <div class="card-body">
+                <h4 style="text-align: center;">Magnetite</h4>
+                <p style="line-height: 1.2rem;" class="card-text">Magnetite is a mineral whose primary component is an
+                    iron oxide that contains equal amounts of iron(II) and iron(III).
+                    Its empirical formula is Fe3O4, and it is often expressed as iron(II,III) oxide. </p>
+            </div>
+        </div>
+        <div class="card" style="width: 20rem;">
+            <model-viewer class="card-img-top" src="../models/mme/azurit (1).glb" camera-controls auto-rotate
+                shadow-intensity="1" touch-action="pan-y"></model-viewer>
+            <div class="card-body">
+                <h4 style="text-align: center;">Azurite</h4>
+                <p style="line-height: 1.2rem;" class="card-text">Azurite is a soft, deep-blue copper mineral produced
+                    by weathering of copper ore deposits. During the early 19th
+                    century, it was also known as chessylite, after the type locality at Chessy-les-Mines near Lyon,
+                    France. </p>
+            </div>
+        </div>
+        <div class="card" style="width: 20rem;">
+            <model-viewer class="card-img-top" src="../models/mme/amazonite/amazonite.gltf" camera-controls auto-rotate
+                shadow-intensity="1" touch-action="pan-y"></model-viewer>
+            <div class="card-body">
+                <h4 style="text-align: center;">Amazonite</h4>
+                <p style="line-height: 1.2rem;" class="card-text">Amazonite is said to have a soothing effect on the
+                    nervous
+                    system. Since the nervous system controls our emotions a
+                    great deal, this stone is said to soothe tense and aggravated situations and to enhance love. </p>
+            </div>
+        </div>
+        <div class="card" style="width: 20rem;">
+            <model-viewer class="card-img-top" src="../models/mme/sandstone_full_360_mesh/sandstone.gltf" camera-controls
+                auto-rotate shadow-intensity="1" touch-action="pan-y"></model-viewer>
+            <div class="card-body">
+                <h4 style="text-align: center;">Sandstone</h4>
+                <p style="line-height: 1.2rem;" class="card-text">Sandstone is a clastic sedimentary rock composed
+                    mainly of sand-sized (0.0625 to 2 mm) silicate grains. Sandstones
+                    comprise about 20–25% of all sedimentary rocks. Sandstone. Sedimentary rock. </p>
+            </div>
+        </div>
+        <div class="card" style="width: 20rem;">
+            <model-viewer class="card-img-top" src="../models/mme/quartz/quartz.gltf" camera-controls auto-rotate
+                shadow-intensity="1" touch-action="pan-y"></model-viewer>
+            <div class="card-body">
+                <h4 style="text-align: center;">Quartz</h4>
+                <p style="line-height: 1.2rem;" class="card-text">Quartz is our most common mineral. Quartz is made of
+                    the two most abundant chemical elements on Earth: oxygen and
+                    silicon. Atoms of oxygen and silicon join together as tetrahedrons (three sided pyramids). </p>
+            </div>
+        </div>
+        <div class="card" style="width: 20rem;">
+            <model-viewer class="card-img-top" src="../models/" camera-controls auto-rotate shadow-intensity="1"
+                touch-action="pan-y"></model-viewer>
+            <div class="card-body">
+                <h4 style="text-align: center;">Amazonite</h4>
+                <p style="line-height: 1.2rem;" class="card-text">Amazonite is said to have a soothing effect on the
+                    nervous
+                    system. Since the nervous system controls our emotions a
+                    great deal, this stone is said to soothe tense and aggravated situations and to enhance love. </p>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+
+
+</html>
