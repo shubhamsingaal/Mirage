@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Google Drive Page</title>
+    <style>
+        /* CSS styles for the page */
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .file {
+            display: inline-block;
+            margin: 10px;
+            width: 150px;
+            height: 200px;
+            text-align: center;
+        }
+
+        .file img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>My Files</h1>
+    <div id="file-list"></div>
+
+    <script>
+        // Sample file data
+        const files = [
+            { name: "jhg", url: "https://drive.google.com/file/d/1HzTVOVm_a-IAhDkEmdrJMqd99q982mR5/view" },
+            { name: "file2.pdf", url: "/files/file2.pdf" },
+            { name: "file3.png", url: "/files/file3.png" },
+        ];
+
+        // Generate thumbnails for image files
+        function generateThumbnails() {
+            const imageFiles = files.filter(file => file.name.endsWith(".jpg") || file.name.endsWith(".jpeg") || file.name.endsWith(".png"));
+            for (const file of imageFiles) {
+                const img = new Image();
+                img.onload = () => {
+                    const canvas = document.createElement("canvas");
+                    canvas.width = 150;
+                    canvas.height = 150 * img.height / img.width;
+                    canvas.getContext("2d").drawImage(img, 0, 0, canvas.width, canvas.height);
+                    const thumbnail = canvas.toDataURL();
+                    const fileElement = document.querySelector(`[data-name="${file.name}"]`);
+                    if (fileElement) {
+                        fileElement.innerHTML = `<img src="${thumbnail}" alt="${file.name}">`;
+                    }
+                };
+                img.src = file.url;
+            }
+        }
+
+        // Display the list of files on the page
+        function displayFileList() {
+            const fileListElement = document.querySelector("#file-list");
+            for (const file of files) {
+                const fileElement = document.createElement("div");
+                fileElement.classList.add("file");
+                fileElement.setAttribute("data-name", file.name);
+                fileElement.innerHTML = `<div>${file.name}</div>`;
+                fileListElement.appendChild(fileElement);
+            }
+        }
+
+        displayFileList();
+        generateThumbnails();
+    </script>
+</body>
+
+</html>

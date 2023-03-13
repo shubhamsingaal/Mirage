@@ -1,12 +1,133 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+    <title>My Drive</title>
     
+   
+    <style>
+        body {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+header {
+	background-color: #4285F4;
+	color: #fff;
+	padding: 20px;
+}
+h1 {
+	margin: 0;
+	font-size: 36px;
+}
+main {
+	padding: 20px;
+}
+section {
+	margin-bottom: 30px;
+}
+h2 {
+	margin: 0;
+	font-size: 24px;
+	margin-bottom: 10px;
+}
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+li {
+	margin-bottom: 10px;
+}
+a {
+	text-decoration: none;
+	color: #4285F4;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>My Drive</h1>
+    </header>
+    
+
+
+
+
+
+    <main>
+        <section>
+            <h2>Documents</h2>
+            <ul>
+                <li>
+                    <a href="documents/file1.pdf">
+                        <img src="icons/pdf.png" alt="PDF icon">
+                        File 1
+                    </a>
+                </li>
+                <li>
+                    <a href="documents/file2.docx">
+                        <img src="icons/docx.png" alt="DOCX icon">
+                        File 2
+                    </a>
+                </li>
+                <li>
+                    <a href="documents/file3.txt">
+                        <img src="icons/txt.png" alt="TXT icon">
+                        File 3
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2>Images</h2>
+            <ul>
+                <li>
+                    <a href="images/image1.jpg">
+                        <img src="icons/jpg.png" alt="JPG icon">
+                        Image 1
+                    </a>
+                </li>
+                <li>
+                    <a href="images/image2.png">
+                        <img src="icons/png.png" alt="PNG icon">
+                        Image 2
+                    </a>
+                </li>
+                <li>
+                    <a href="images/image3.gif">
+                        <img src="icons/gif.png" alt="GIF icon">
+                        Image 3
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+
+
+
+
+
+    <script>
+        // This code is optional and can be used to enhance the user experience.
+            // It adds a confirmation dialog before downloading a file.
+            const links = document.querySelectorAll('a');
+            links.forEach(link => {
+                link.addEventListener('click', e => {
+                    const confirmed = confirm('Do you want to download this file?');
+                    if (!confirmed) {
+                        e.preventDefault();
+                    }
+                });
+            });
+
+    </script>
 </body>
+
 </html>

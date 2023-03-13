@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Drive</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            margin-top: 0;
+        }
+
+        .file {
+            display: inline-block;
+            margin: 10px;
+            text-align: center;
+        }
+
+        .file-image {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .file-name {
+            margin-top: 5px;
+            font-size: 14px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .file-download {
+            margin-top: 5px;
+            font-size: 14px;
+            text-decoration: none;
+            color: blue;
+            cursor: pointer;
+        }
+    </style>
+    <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
+</head>
+
+<body>
+    <h1>My Drive</h1>
+    <div id="file-list">
+        <!-- Add files here -->
+    </div>
+    <script>
+        var files = [
+            {
+                name: "file1.pdf",
+                url: "https://example.com/file1.pdf"
+            },
+            {
+                name: "file2.pdf",
+                url: "https://example.com/file2.pdf"
+            },
+            // Add more files here
+        ];
+
+        var fileList = document.getElementById("file-list");
+
+        files.forEach(function (file) {
+            var fileDiv = document.createElement("div");
+            fileDiv.classList.add("file");
+            var fileImage = document.createElement("img");
+            fileImage.classList.add("file-image");
+            // Generate PNG thumbnail image from the first page of the PDF file
+            PDFJS.getDocument(file.url).promise.then(function (pdf) {
+                return pdf.getPage(1);
+            }).then(function (page) {
+                var viewport = page.getViewport({ scale: 0.5 });
+                var canvas = document.createElement("canvas");
+                var ctx = canvas.getContext("2d");
+                canvas.height = viewport.height;
+                canvas.width = viewport.width;
+                var renderContext = {
+                    canvasContext: ctx,
+                    viewport: viewport
+                };
+                return page.render(renderContext).promise;
+            }).then(function () {
+                fileImage.src = canvas.toDataURL("image/png");
+            }).catch(function (error) {
+                console.error(error);
+            });
+            fileDiv.appendChild(fileImage);
+            var fileName = document.createElement("div");
+            fileName.classList.add("file-name");
+            fileName.textContent = file.name;
+            fileDiv.appendChild(fileName);
+            var fileDownload = document.createElement("a");
+            fileDownload.classList.add("file-download");
+            fileDownload.textContent = "Download";
+            fileDownload.href = file.url;
+            fileDownload.target = "_blank";
+            fileDiv.appendChild(fileDownload);
+            fileList.appendChild(fileDiv);
+        });
+    </script>
+</body>
+
+</html>
